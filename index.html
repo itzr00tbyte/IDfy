@@ -1,65 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Custom File Upload Button</title>
-    <!-- Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-    <!-- Google Fonts  -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/style.css" />
-  </head>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Preview Image Before Upload</title>
+  <link rel="stylesheet" href="./style.css">
 
-  <body><br>
-   <div class="middle">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form action="" method="post">
+<center>
 
-      <div class="container">
-         <h1 align="center">verfication</h1>
-         
-         <h5 align="center">Upload Image Holding ID Card</h5>
-         <br>
-         <input type="file" id="file-input" multiple />
-         <label for="file-input">
-            <i class="fa-solid fa-arrow-up-from-bracket"></i>
-            &nbsp; Upload 
-         </label>
-         <div id="num-of-files">No Files Choosen</div>
-         <ul id="files-list"></ul>
-         <h5 align="center">Back Side Of ID Card</h5>
-         <br>
-         <input type="file" id="file-input" multiple />
-         <label for="file-input">
-            <i class="fa-solid fa-arrow-up-from-bracket"></i>
-            &nbsp; Upload 
-         </label>
-         <div id="num-of-files">No Files Choosen</div>
-         <ul id="files-list"></ul>
-      <h5 align="center">Front Side Of ID Card</h5>
-      <br>
-      <input type="file" id="file-input" multiple />
-      <label for="file-input">
-         <i class="fa-solid fa-arrow-up-from-bracket"></i>
-         &nbsp; Upload 
-      </label>
-      <div id="num-of-files">No Files Choosen</div>
-      <ul id="files-list"></ul>
-      
-      <!-- <button>Submit</button> -->
-      <center>
-
-         <button class="Submit">Submit</button>
-      </center>
+   <div class="form">
+      <h1>vérification d'identité</h1>
+      <div class="grid">
+         <div class="form-element">
+            <input type="file" id="file-1" accept="image/*">
+            <label for="file-1" id="file-1-preview">
+               <img src="https://www.shutterstock.com/image-vector/illustration-businessman-holding-blank-id-260nw-288479297.jpg" alt="">
+               <div>
+                  <span>+</span>
+               </div>
+            </label>
+         </div>
+         <div class="form-element">
+            <input type="file" id="file-2" accept="image/*">
+            <label for="file-2" id="file-2-preview">
+               <img src="https://bit.ly/3ubuq5o" alt="">
+               <div>
+                  <span>+</span>
+               </div>
+            </label>
+         </div>
+         <div class="form-element">
+            <input type="file" id="file-3" accept="image/*">
+            <label for="file-3" id="file-3-preview">
+               <img src="https://bit.ly/3ubuq5o" alt="">
+               <div>
+                  <span>+</span>
+               </div>
+            </label>
+         </div>
+      </div>
    </div>
-   
-</div>
-<!-- Script -->
-   <script src="assets/script.js"></script>
+</form>
+</center>
+<!-- partial -->
+<script  src="./script.js"></script>
+
 </body>
 </html>
